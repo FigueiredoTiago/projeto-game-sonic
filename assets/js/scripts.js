@@ -35,3 +35,6 @@ const loop = setInterval(() => {
 
 document.addEventListener('keypress', jump
 );
+
+document.addEventListener('click', jump
+);
