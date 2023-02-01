@@ -2,13 +2,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: silver;
 }
 
 .game-board {
     width: 80%;
     height: 500px;
     border: 1px solid black;
-    margin: 0 auto;
+    margin:0 auto;
     position: relative;
     overflow: hidden;
 
@@ -17,18 +22,42 @@
     background-repeat: no-repeat;
 }
 
+.game-board h1 {
+    text-align: center;
+    display: none;
+    font-weight: bolder;
+    font-size: 4em;
+}
+
+.game-board a {
+    color: RED;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.game-board p {
+    color: blue;
+    text-decoration: none;
+    font-size:16px;
+}
+
+.try-again h1,
+a {
+    display: block;
+}
+
 .pipe {
     position: absolute;
     bottom: 0;
-    width: 50px;
-    right: -160px;
-    animation: pipe-animation 2s infinite linear;
+    width: 80px;
+    /*left: 120px;*/
+    animation: pipe-animation 1.5s infinite linear;
 }
 
-.mario {
+.person {
     width: 150px;
     position: absolute;
-    bottom:0px;
+    bottom: 0px;
 }
 
 .jump {
