@@ -17,7 +17,7 @@ const loop = setInterval(() => {
     const personPosition = +getComputedStyle(person).bottom.replace('px', '');
 
     if(pipePosition <= 120 && pipePosition > 0 && personPosition < 55 ) {
-        person.src = 'assets/img/sonicfim.png'
+        person.src = ''
         
         pipe.style.animation = 'none';
         pipe.style.left = `${pipePosition}px`;
